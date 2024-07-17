@@ -1,0 +1,315 @@
+header{
+    text-align: center;
+    width: 100%;
+    height: 60px;
+    /*padding-top:  10px;
+    padding-bottom:  5px;*/
+    margin: 0;
+    box-shadow: 0px 6px 8px -5px #c2c2c2;
+}
+.headerContainer{
+    display: flex;
+    justify-content: center;    
+    align-items: center;
+}
+h1{
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:normal;
+    font-size: 60px;
+    color: #707070;
+}
+.subtitle{
+    margin-right: auto;
+    margin-left: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight:normal;
+    font-size: 40px;
+    color: #707070;
+}
+a{
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#707070
+}
+.input{
+    box-shadow: 0px 0px 3px 0px inset;
+    box-shadow: #707070;
+    border: 1px solid #c2c2c2;
+    border-radius: 10px;
+    width: 300px;
+    height: 38px;
+}
+.headerLi {
+    display: flex;
+    margin-left:10%;
+    font-size: 30px;
+}
+.headerLink{
+    display: flex;
+    margin-bottom: 6px;
+    border-bottom: 4px solid #ffffff;
+    transition: 0.3s;
+}
+.headerLink:hover{
+    border-bottom: 4px solid #c2c2c2;
+}
+.sectionsContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    display: grid;  grid-template-columns: 1fr 1fr ;
+    /* flex-wrap: wrap;
+    justify-content: center; */
+}
+.section{
+    text-align: center;
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 400px;
+    height: 400px;
+    margin: 100px 100px 0px;
+    box-shadow: 0px 0px 10px #c2c2c2;
+    border-radius: 10px;
+}
+.sectionTitle{
+    height: 64px;
+    color: #707070;
+    font-weight: normal;
+    font-size: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 15px;
+}
+.sectionDescription{
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+.follow{
+    /*margin-top: auto;
+    margin-bottom: auto;*/
+    color: white;
+    font-size: 25px;
+    width: 250px;
+    background-color: #BFBFBF;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px #c2c2c2;
+    transition: 0.3s;
+}
+.follow:hover{
+    box-shadow: 0px 0px 20px 0px inset #c2c2c2;
+    background-color: white;
+    color: #c2c2c2;
+}
+.followContainer{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width: 250px;
+    height: 40px;
+}
+.descriptionContainer{
+    margin-top: 16px;
+    margin-bottom: 16px;
+    text-align: center;
+    padding: 5%;
+    width: 360px;
+    height: 189px;
+}
+.educationalContainer{    
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5%;
+    width: 1700px;
+    text-align:center;
+}
+.educText{
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1700px;
+    text-align: justify;
+}
+.nextPage{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    width:500px;
+    height: 100px;
+}
+.nextLink{
+    /* margin-top: auto;
+    margin-bottom: auto; */border-radius: 30px;
+    box-shadow: 0px 0px 20px 0px #c2c2c2;
+    background-color: #c2c2c2;
+    text-align: center;
+    width:500px;
+    color: white;
+    font-size: 60px;
+    transition:0.3s;
+}
+.nextLink:hover{
+    color: #c2c2c2;
+     background-color: white;
+     box-shadow: 0px 0px 20px 0px inset #c2c2c2;
+    /*background-color: #c2c2c2;*/
+}
+.logo{
+    fill: #707070;
+    padding: 1px;
+    width: 45px;
+    height: 50px;
+}
+.cContainer{
+    padding: 1%;
+    width: auto;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #383838;
+}
+.code {
+    color: white;
+    text-align: left;
+    font-family: Consolas,"courier new";
+    font-size: large;
+}
+table {
+    color: #707070;
+    border: 2px solid #c2c2c2;
+    display: table;
+    border-collapse:collapse;
+    border-spacing: 5px;
+}
+.tr, td, th{
+    color: #707070;
+    border: 2px solid #c2c2c2;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+}
+.code {
+    color: white;
+    text-align: left;
+    font-family: Consolas,"courier new";
+    font-size: large;
+}
+pre{
+    line-height: normal;
+}.tab {
+    display: inline-block;
+    width: 4em;
+}
+.search{ 
+    /* display: flex;
+    flex-direction: column; */
+    position: relative;
+    margin-bottom: 6px;
+    width: 300px;
+    height: 40px;
+}
+.resultsContainer{
+    margin-left: auto;
+    margin-right: auto;
+    width: 306px;
+    height: auto;
+    background-color: #dfdfdf;
+    position: absolute;
+    z-index: 99999;
+}
+.hide{
+    display: none;
+    width: 10px;
+}
+.searchLi{
+    margin: 0;
+    list-style-type: none;
+    text-align: left;
+    border-bottom: 2px solid #707070 ;
+}
+.searchLink{
+    font-size: 15px;
+}
+.se
+.hints{
+    padding-left: 10px;
+}
+marquee{
+    padding-top: 1%;
+    color: #707070;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: #c2c2c2;
+}
+ul{
+    list-style-type: none;
+}
+.photo{
+    width: 100px;
+    height: 100px;
+}
+  
+  .author-container {
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    width:1200px
+  }
+  
+  .author-info {
+    flex: 1;
+    margin-right: 40px;
+  }
+  
+  .author-image {
+    flex: 0 0 300px;
+  }
+  
+  .author-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .author-info h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .author-info ul {
+    list-style-type: none;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  
+  .author-info ul li {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: left;
+    font-size: 30px;
+    color: #707070;
+    margin-bottom: 10px;
+  }
+  
+  .author-info ul li strong {
+    font-weight: bold;
+    color: #707070;
+    font-size: 30px;
+    margin-right: 5px;
+  }
+  
+  .author-info p {
+    line-height: 1.5;
+    color: #555;
+  }
+  

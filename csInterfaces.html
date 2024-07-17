@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <link rel = "preconnect" href = "https://fonts.googleapis.com">
+   <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+   <link href = "https://fonts.googleapis.com/css2?family = Fira+Code:wght@300..700&family = Source+Code+Pro:ital, wght@0, 200..900;1, 200..900&display = swap" rel = "stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width,  initial-scale = 1.0">
+    <title>Интерфейсы</title>
+</head>
+    <header>
+    <ul class="headerContainer">
+        <li class = "headerLi"><a href="index.html"><img class="logo" src="c-sharp-grey.svg" alt=""></a></li>
+        <li class = "headerLi"><a class="headerLink" href="dictionary.html">Словарь</a></li>
+        <li class = "headerLi"><a class="headerLink" href="csVideo.html">Видеоматериалы</a></li>
+        <li class = "headerLi"><a class="headerLink" href="authors.html">Авторы</a></li>
+        
+        <li class = "headerLi"><div class="search"></li></ul>
+    </header>
+    <body><div class="educationalContainer"><div class="educationalContainer">
+        <h2 class="subtitle">Интерфейсы и абстрактные классы</h2>
+        <h3 class="educText">Интерфейсы</h3>
+        <p class="educText">Интерфейсы определяют контракт, который должны реализовывать классы. Интерфейс содержит только декларацию методов, но не их реализацию.</p>
+        <div class="cContainer">
+            <pre><p class="code"><font color=#2b91af> 1 </font><font color=#569ccb> interface</font> IFlyable<br><font color=#2b91af> 2 </font>{<br><font color=#2b91af> 3 </font>     <font color=#569ccb>void</font> Fly();<br><font color=#2b91af> 4 </font>}<br><font color=#2b91af> 5 </font><br><font color=#2b91af> 6 </font><font color=#569ccb> class</font> Eagle : Animal, IFlyable<br><font color=#2b91af> 7 </font>{<br><font color=#2b91af> 8 </font>     <font color=#569ccb>public override void</font> MakeSound()<br><font color=#2b91af> 9 </font>     {<br><font color=#2b91af>10 </font>        <font color=#3fc2b0>Console</font><font color=#d6dcaa>.WriteLine</font>(<font color=#d29d85>"Кар-кар!"</font>);<br><font color=#2b91af>11 </font>     }<br><font color=#2b91af>12 </font><br><font color=#2b91af>13 </font>     <font color=#569ccb>public void</font> Fly()<br><font color=#2b91af>14 </font>     {<br><font color=#2b91af>15 </font>        <font color=#3fc2b0>Console</font><font color=#d6dcaa>.WriteLine</font>(<font color=#d29d85>"Орел летит"</font>);<br><font color=#2b91af>16 </font>     }<br><font color=#2b91af>17 </font>}<br></p></pre>
+        </div>
+        <h3 class="educText">Абстрактные классы</h3>
+        <p class="educText">Абстрактные классы содержат как декларации методов, так и их реализацию. Они используются для объединения общих свойств и методов в базовом классе.</p>
+        <div class="cContainer">
+            <pre><p class="code"><font color=#2b91af> 1 </font><font color=#569ccb> abstract class</font> FlyingAnimal : Animal<br><font color=#2b91af> 2 </font>{<br><font color=#2b91af> 3 </font>     <font color=#569ccb>public abstract void</font> Fly();<br><font color=#2b91af> 4 </font>     <font color=#569ccb>public override void</font> MakeSound()<br><font color=#2b91af> 5 </font>     {<br><font color=#2b91af> 6 </font>         <font color=#3fc2b0>Console</font><font color=#d6dcaa>.WriteLine</font>(<font color=#d29d85>"Животное издает звук во время полета"</font>);<br><font color=#2b91af> 7 </font>     }<br><font color=#2b91af> 8 </font>}<br><font color=#2b91af> 9 </font><br><font color=#2b91af>10 </font><font color=#569ccb> class</font> Sparrow : FlyingAnimal<br><font color=#2b91af>11 </font>{<br><font color=#2b91af>12 </font>     <font color=#569ccb>public override void</font> Fly()<br><font color=#2b91af>13 </font>     {<br><font color=#2b91af>14 </font>         <font color=#3fc2b0>Console</font><font color=#d6dcaa>.WriteLine</font>(<font color=#d29d85>"Воробей летит"</font>);<br><font color=#2b91af>15 </font>     }<br><font color=#2b91af>16 </font>}<br></p></pre>
+        </div>
+        <p class="educText">В этом примере интерфейс IFlyable определяет контракт для летающих животных, который реализует класс Eagle. Абстрактный класс FlyingAnimal содержит общую реализацию метода MakeSound() и объявление абстрактного метода Fly(), который реализуется в конкретном классе Sparrow.</p>
+    </div>
+      
+    
+</body>
+<footer><marquee behavior="" direction="left">Сайт разработан в рамках учебной практики студентом ТИУ Щербаковым Данилом</marquee></footer>
+</html>

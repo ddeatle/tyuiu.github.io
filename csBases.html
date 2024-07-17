@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Базовый синтаксис</title>
+   </head>
+      <header>
+         <ul class="headerContainer">
+             <li class = "headerLi"><a href="index.html"><img class="logo" src="c-sharp-grey.svg" alt=""></a></li>
+             <li class = "headerLi"><a class="headerLink" href="dictionary.html">Словарь</a></li>
+             <li class = "headerLi"><a class="headerLink" href="csVideo.html">Видеоматериалы</a></li>
+             <li class = "headerLi"><a class="headerLink" href="authors.html">Авторы</a></li>
+             <li class = "headerLi"><div class="search"></li>
+         </ul>
+         </header>
+    <div class="educationalContainer">
+        
+      <h2 class="subtitle">Базовый синтаксис</h2>
+         <h3 class="educText"> Переменные:</h3>
+            <p class="educText"> - Переменная - это "контейнер", в котором вы можете хранить какое-либо значение.<br>
+            Для объявления переменной указывается тип данных, за которым следует название переменной и знак равно =, после которого указывается значение, присваиваемое переменной. Каждая строка с объявлением переменной заканчивается точкой с запятой ;<br>
+            - Пример:<br>
+            <div class="cContainer">
+               <p class="code">
+                  <font color= #2b91af>1</font><font color=#569ccb> int</font> myInt = 42;<br>
+               </p>
+               
+            </div>
+            <h3 class="educText"> Типы данных:</h3>
+      <p class="educText"> - C# - язык с сильной статической типизацией, поэтому каждая переменная имеет определенный тип данных.<br>
+      - Основные типы данных:<br>
+        - int (целые числа): 42, -10, 0<br>
+        - float и double (числа с плавающей точкой): 3.14, -2.5, 0.0<br>
+        - bool (логический тип): true или false<br>
+        - char (символьный тип): 'A', '5', '+'<br>
+        - string (текстовый тип): "Привет, мир!"<br>
+      - Пример:<br></p>
+      <div class="cContainer">
+         <p class="code">
+            <font color= #2b91af>1</font><font color=#569ccb> int</font> myInt = 32;<br>
+            <font color= #2b91af>2</font><font color=#569ccb> float</font> myFloat = 3.14f;<br>
+            <font color= #2b91af>3</font><font color=#569ccb> bool</font> myBool = true;<br>
+            <font color= #2b91af>4</font><font color=#569ccb> char</font> myChar = <font color=#d29d85> 'A'</font>;<br>
+            <font color= #2b91af>5</font><font color=#569ccb> string</font> myString = <font color=#d29d85> 'Привет!'</font><br></p>
+      </div>
+      <h3 class="educText">  Ввод и вывод данных</h3>
+      <p class="educText">- Для вывода данных используется Console.WriteLine().<br>
+         - Для ввода данных используется Console.ReadLine().<br>
+         - Пример:<br></p>
+         <div class="cContainer">
+            <p class="code">
+               <font color= #2b91af>1</font><font color= #3fc2b0>  Console</font><font color=#d6dcaa>.WriteLine</font>(<font color=#d29d85>"Введите ваше имя:"</font>);<br>            
+               <font color= #2b91af>2</font><font color=#569ccb> string</font> myString = <font color= #3fc2b0>  Console</font><font color=#d6dcaa>.ReadLine</font>();<br>
+               <font color=#2b91af>2</font> <font color=#3fc2b0>Console</font><font color=#ffffff>.</font><font color=#d6dcaa>WriteLine</font><font color=#ffffff>(</font><font color=#d29d85>"Привет</font><font color=#ffffff>,</font> <font color=#ffffff>name</font> <font color=#ffffff>+</font> <font color=#d29d85>"!"</font><font color=#ffffff>);</font>
+            </p>
+         </div>
+         <h3 class="educText"> Арифметические и логические операторы:</h3>
+           <p class="educText"> - Арифметические операторы: +, -, *, /, % (остаток от деления).<br>
+            - Логические операторы: <, >, <=, >=, ==, !=, && (and), || (or), ! (not).<br>
+            - Пример:<br></p>
+            <div class="cContainer">
+               <p class="code">
+                  <font color=#2b91af>1</font> <font color=#569ccb>int</font> <font color=#ffffff>a</font> <font color=#ffffff>=</font> <font color=#ffffff>10</font><font color=#ffffff>,</font> <font color=#ffffff>b</font> <font color=#ffffff>=</font> <font color=#ffffff>4</font><font color=#ffffff>;</font><br>
+
+<font color=#2b91af>2</font> <font color=#569ccb>int</font> <font color=#ffffff>sum</font> <font color=#ffffff>=</font> <font color=#ffffff>a</font> <font color=#ffffff>+</font> <font color=#ffffff>b</font><font color=#ffffff>;</font><br>
+
+<font color=#2b91af>3</font> <font color=#569ccb>bool</font> <font color=#ffffff>isGreater</font> <font color=#ffffff>=</font> <font color=#ffffff>a</font> <font color=#ffffff>></font> <font color=#ffffff>b</font><font color=#ffffff>;</font><br>
+
+<font color=#2b91af>4</font> <font color=#569ccb>bool</font> <font color=#ffffff>isEven</font> <font color=#ffffff>=</font> <font color=#ffffff>(</font><font color=#ffffff>b</font> <font color=#ffffff>%</font> <font color=#ffffff>2</font> <font color=#ffffff>==</font> <font color=#ffffff>0</font><font color=#ffffff>);</font><br>
+               </p>
+            </div>
+    </div>
+    </div>
+    <div class="nextPage"><a class="nextLink" href="csLogicBases.html">Далее</a></div>
+    </div>
+    
+</body>
+<footer><marquee behavior="" direction="left">Сайт разработан в рамках учебной практики студентом ТИУ Щербаковым Данилом</marquee></footer>
+</html>

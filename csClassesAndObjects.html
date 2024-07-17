@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <link rel = "preconnect" href = "https://fonts.googleapis.com">
+   <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+   <link href = "https://fonts.googleapis.com/css2?family = Fira+Code:wght@300..700&family = Source+Code+Pro:ital, wght@0, 200..900;1, 200..900&display = swap" rel = "stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width,  initial-scale = 1.0">
+    <title>Классы и Объекты</title>
+</head>
+    <header>
+    <ul class="headerContainer">
+        <li class = "headerLi"><a href="index.html"><img class="logo" src="c-sharp-grey.svg" alt=""></a></li>
+        <li class = "headerLi"><a class="headerLink" href="dictionary.html">Словарь</a></li>
+        <li class = "headerLi"><a class="headerLink" href="csVideo.html">Видеоматериалы</a></li>
+        <li class = "headerLi"><a class="headerLink" href="authors.html">Авторы</a></li>
+        <li class = "headerLi"><div class="search"></li></ul>
+    </header>
+    <body><div class="educationalContainer">
+      <h1>Объектно-Ориентированное Программирование</h1>
+      <h2 class="subtitle">Классы и объекты</h2>
+      <div>
+          <h3 class="educText">Объявление класса</h3>
+          <p class="educText">Классы - это основа объектно-ориентированного программирования. Они служат шаблоном для создания объектов, которые содержат данные (поля) и методы (функции):</p>
+          <div class="cContainer">
+              <pre><p class="code"><font color="#2b91af"> 1 </font><font color="#569ccb">class</font> Person<br><font color="#2b91af"> 2 </font>{<br><font color="#2b91af"> 3 </font>    <font color="#569ccb">string</font> name;<br><font color="#2b91af"> 4 </font>    <font color="#569ccb">int</font> age;<br><font color="#2b91af"> 5 </font>    <font color="#2b91af">public</font> <font color="#3fc2b0">void</font> Greet()<br><font color="#2b91af"> 6 </font>    {<br><font color="#2b91af"> 7 </font>        <font color="#3fc2b0">Console</font>.<font color="#d6dcaa">WriteLine</font>($<font color="#d29d85">"Привет, меня зовут {name} и мне {age} лет!"</font>);<br><font color="#2b91af"> 8 </font>    }<br><font color="#2b91af"> 9 </font>}<br></p></pre>
+          </div>
+      </div>
+      <div>
+          <h3 class="educText">Создание объектов</h3>
+          <p class="educText">Для создания объекта класса используется оператор <span class="code">new</span>:</p>
+          <div class="cContainer">
+              <pre><p class="code"><font color="#2b91af"> 1 </font><font color="#569ccb">Person</font> person = <font color="#569ccb">new</font> <font color="#569ccb">Person</font>();<br><font color="#2b91af"> 2 </font>person.name = <font color="#d29d85">"Иван"</font>;<br><font color="#2b91af"> 3 </font>person.age = 30;<br><font color="#2b91af"> 4 </font>person.Greet();<br></p></pre>
+          </div>
+      </div>
+      <div>
+          <h3 class="educText">Конструкторы</h3>
+          <p class="educText">Конструкторы - это методы, которые автоматически вызываются при создании объекта. Они служат для инициализации объекта:</p>
+          <div class="cContainer">
+              <pre><p class="code"><font color="#2b91af"> 1 </font><font color="#569ccb">class</font> Person<br><font color="#2b91af"> 2 </font>{<br><font color="#2b91af"> 3 </font>    <font color="#569ccb">string</font> name;<br><font color="#2b91af"> 4 </font>    <font color="#569ccb">int</font> age;<br><font color="#2b91af"> 5 </font>    <font color="#2b91af">public</font> Person(<font color="#569ccb">string</font> n, <font color="#569ccb">int</font> a)<br><font color="#2b91af"> 6 </font>    {<br><font color="#2b91af"> 7 </font>        name = n;<br><font color="#2b91af"> 8 </font>        age = a;<br><font color="#2b91af"> 9 </font>    }<br><font color="#2b91af">10 </font>    <font color="#2b91af">public</font> <font color="#3fc2b0">void</font> Greet()<br><font color="#2b91af">11 </font>    {<br><font color="#2b91af">12 </font>        <font color="#3fc2b0">Console</font>.<font color="#d6dcaa">WriteLine</font>($<font color="#d29d85">"Привет, меня зовут {name} и мне {age} лет!"</font>);<br><font color="#2b91af">13 </font>    }<br><font color="#2b91af">14 </font>}<br><font color="#2b91af">15 </font><font color="#569ccb">Person</font> person = <font color="#569ccb">new</font> <font color="#569ccb">Person</font>(<font color="#d29d85">"Иван"</font>, 30);<br><font color="#2b91af">16 </font>person.Greet();<br></p></pre>
+          </div>
+      </div>
+      
+  </div>
+      
+    <div class = "nextPage"><a class = "nextLink" href = "csIncapsulation.html">Далее</a></div>
+    
+</body>
+<footer><marquee behavior="" direction="left">Сайт разработан в рамках учебной практики студентом ТИУ Щербаковым Данилом</marquee></footer>
+</html>

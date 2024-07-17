@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+   <link rel = "preconnect" href = "https://fonts.googleapis.com">
+   <link rel = "preconnect" href = "https://fonts.gstatic.com" crossorigin>
+   <link href = "https://fonts.googleapis.com/css2?family = Fira+Code:wght@300..700&family = Source+Code+Pro:ital, wght@0, 200..900;1, 200..900&display = swap" rel = "stylesheet">
+    <link rel = "stylesheet" href = "style.css">
+    <meta charset = "UTF-8">
+    <meta name = "viewport" content = "width = device-width,  initial-scale = 1.0">
+    <title>Работа со строками</title>
+</head>
+    <header>
+    <ul class="headerContainer">
+        <li class = "headerLi"><a href="index.html"><img class="logo" src="c-sharp-grey.svg" alt=""></a></li>
+        <li class = "headerLi"><a class="headerLink" href="dictionary.html">Словарь</a></li>
+        <li class = "headerLi"><a class="headerLink" href="csVideo.html">Видеоматериалы</a></li>
+        <li class = "headerLi"><a class="headerLink" href="authors.html">Авторы</a></li>
+        
+        <li class = "headerLi"><div class="search"></li></ul>
+    </header>
+    <body>
+    <div class = "educationalContainer"><div class="educationalContainer">
+      <h2 class="subtitle">Работа со строками</h2>
+      <div>
+          <h3 class="educText">Объявление и инициализация строк</h3>
+          <p class="educText">В C# строки представлены типом string. Строки можно инициализировать с помощью литералов в одинарных или двойных кавычках:</p>
+          <div class="cContainer">
+              <p class="code">
+                  <font color="#2b91af">1</font><font color="#569ccb"> string</font> message = <font color="#d29d85">"Привет, мир!"</font>;<br>
+              </p>
+          </div>
+      </div>
+      <div>
+          <h3 class="educText">Конкатенация строк</h3>
+          <p class="educText">Строки можно объединять с помощью оператора + или с использованием интерполяции строк:</p>
+          <div class="cContainer">
+              <p class="code">
+                  <font color="#2b91af">1</font><font color="#569ccb"> string</font> firstName = <font color="#d29d85">"Иван"</font>;<br>
+                  <font color="#2b91af">2</font><font color="#569ccb"> string</font> lastName = <font color="#d29d85">"Иванов"</font>;<br>
+                  <font color="#2b91af">3</font><font color="#569ccb"> string</font> fullName = firstName + <font color="#d29d85">" "</font> + lastName;<br>
+                  <font color="#2b91af">4</font><font color="#569ccb"> string</font> formattedName = $<font color="#d29d85">"Меня зовут {firstName} {lastName}"</font>;<br>
+              </p>
+          </div>
+      </div>
+      <div>
+          <h3 class="educText">Доступ к символам строки</h3>
+          <p class="educText">Можно обращаться к символам строки по индексам, начиная с 0:</p>
+          <div class="cContainer">
+              <p class="code">
+                  <font color="#2b91af">1</font><font color="#569ccb"> string</font> message = <font color="#d29d85">"Привет, мир!"</font>;<br>
+                  <font color="#2b91af">2</font><font color="#569ccb"> char</font> firstChar = message[0];<br>
+              </p>
+          </div>
+      </div>
+      <div>
+          <h3 class="educText">Свойства и методы строк</h3>
+          <p class="educText">Строки предоставляют множество полезных свойств и методов, таких как Length, ToUpper(), ToLower():</p>
+          <div class="cContainer">
+              <p class="code">
+                  <font color="#2b91af">1</font><font color="#569ccb"> string</font> message = <font color="#d29d85">"Привет, мир!"</font>;<br>
+                  <font color="#2b91af">2</font><font color="#569ccb"> int</font> length = message.Length;<br>
+                  <font color="#2b91af">3</font><font color="#569ccb"> string</font> uppercase = message.ToUpper();<br>
+                  <font color="#2b91af">4</font><font color="#569ccb"> string</font> lowercase = message.ToLower();<br>
+              </p>
+          </div>
+      </div>
+      <div>
+          <h3 class="educText">Сравнение строк</h3>
+          <p class="educText">Строки можно сравнивать с использованием операторов сравнения или метода Equals():</p>
+          <div class="cContainer">
+              <p class="code">
+                  <font color="#2b91af">1</font><font color="#569ccb"> string</font> str1 = <font color="#d29d85">"apple"</font>;<br>
+                  <font color="#2b91af">2</font><font color="#569ccb"> string</font> str2 = <font color="#d29d85">"banana"</font>;<br>
+                  <font color="#2b91af">3</font><font color="#569ccb"> bool</font> isEqual = str1 == str2;<br>
+              </p>
+          </div>
+      </div>
+  </div>
+  
+    <div class = "nextPage"><a class = "nextLink" href = "csArrays.html">Далее</a></div>
+    
+</body>
+<footer><marquee behavior="" direction="left">Сайт разработан в рамках учебной практики студентом ТИУ Щербаковым Данилом</marquee></footer>
+</html>
